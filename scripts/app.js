@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const photoContainer = document.querySelector(".photo-container"); //
+  const photoContainer = document.querySelector(".photo-container");
   photoContainer.style.backgroundImage = `url(${images[0].file})`;
 
   const contentDiv = document.createElement("div");
@@ -10,14 +10,15 @@ window.addEventListener("DOMContentLoaded", () => {
   const contentText = document.createElement("p");
   contentText.textContent = images[0].description;
 
-  contentDiv.setAttribute("class", "content-div");
+  contentDiv.setAttribute("class", "content-div"); // add class to div
 
   contentDiv.appendChild(contentTilte);
   contentDiv.appendChild(contentText);
   photoContainer.appendChild(contentDiv);
 
-  const thumbnails = document.querySelector(".thumbnails");
+  const thumbnails = document.querySelector(".thumbnails"); // get thumbnails
 
+  // create thumbnails by looping through images array and creating img elements for each image in array and adding them to thumbnails div
   for (let i = 0; i < images.length; i++) {
     const newDiv = document.createElement("div");
     newDiv.style.backgroundImage = `url(${images[i].file})`;
@@ -27,6 +28,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".thumbnail-item")[0].classList.add("selected");
 
+  // add event listener to thumbnails to listen for click
   document.querySelectorAll(".thumbnail-item").forEach((div, i) => {
     div.addEventListener("click", () => {
       photoContainer.style.backgroundImage = `url(${images[i].file})`;
@@ -36,6 +38,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // add event listener to left and right arrows to listen for click event and change background image and content
   document.querySelectorAll(".thumbnail-item").forEach((div) => {
     div.addEventListener("click", (e) => {
       const selected = document.querySelector(".selected");
@@ -48,8 +51,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const nextButton = document.querySelector(".next-button");
   let counter = 0;
 
+  // add event listener to previous button
   nextButton.addEventListener("click", () => {
     counter++;
+    // if counter is greater than images array length, set counter to 0
     if (counter === images.length) {
       counter = 0;
     }
@@ -61,8 +66,10 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".thumbnail-item")[counter].classList.add("selected");
   });
 
+  // add event listener to next button
   previousButton.addEventListener("click", () => {
     counter--;
+    // if counter is less than 0, set counter to last image in array
     if (counter === -1) {
       counter = images.length - 1;
     }
