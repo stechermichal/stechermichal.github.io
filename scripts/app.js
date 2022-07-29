@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const photoContainer = document.querySelector(".photo-container");
+  const photoContainer = document.querySelector(".photo-container"); //
   photoContainer.style.backgroundImage = `url(${images[0].file})`;
 
   const contentDiv = document.createElement("div");

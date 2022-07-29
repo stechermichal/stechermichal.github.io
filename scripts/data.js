@@ -1,29 +1,37 @@
 const images = [
   {
-    file: "../images/camp.jpg",
-    title: "Camp",
-    description: "Campfire with a sunset.",
+    file: "../images/beach.jpg",
+    title: "Beach",
+    description: "Sunny beach with waves breaking against the rocks.",
+  },
+  {
+    file: "../images/city.jpg",
+    title: "City",
+    description: "Modern city with a bridge at dawn.",
+  },
+  {
+    file: "../images/cottage.jpg",
+    title: "Cottage",
+    description: "A snowy cottage in a forrest clearing.",
+  },
+  {
+    file: "../images/elephants.jpg",
+    title: "Elephants",
+    description: "A herd of elephants in Africa.",
   },
   {
     file: "../images/harbor.jpg",
     title: "Harbor",
-    description:
-      "Cover art of the LP Harbor.",
+    description: "Three ships docking at a harbor.",
   },
   {
-    file: "../images/roof.jpg",
-    title: "Roof",
-    description: "Girl standing on a roof.",
+    file: "../images/lemur.jpg",
+    title: "Lemur",
+    description: "Lemur livin the life.",
   },
   {
-    file: "../images/scully.jpg",
-    title: "Scully",
-    description:
-      "Scully from the tv series x-files.",
-  },
-  {
-    file: "../images/za_warudo.jpg",
-    title: "The world",
-    description: "Tarrot card titled the world.",
+    file: "../images/lioness.jpg",
+    title: "Lioness",
+    description: "A lioness sticking her tongue out.",
   },
 ];
