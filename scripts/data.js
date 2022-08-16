@@ -1,3 +1,5 @@
+// TODO: Make it so that infinite amount of images can be loaded.
+
 const images = [
   {
     file: "../images/beach.jpg",

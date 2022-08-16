@@ -50,7 +50,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const previousButton = document.querySelector(".prev-button");
   const nextButton = document.querySelector(".next-button");
   let counter = 0;
-
+ 
   // add event listener to previous button
   nextButton.addEventListener("click", () => {
     counter++;
